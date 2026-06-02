@@ -78,7 +78,6 @@
             margin-left: 5px;
         }
         
-        /* Active Sorting Header Highlight */
         th.active-sort {
             background-color: #cc0000;
             opacity: 1;
@@ -96,12 +95,10 @@
             background-color: #f1f1f1;
         }
         
-        /* Clicked Row Highlight */
         tr.selected-row, tr.selected-row:hover {
             background-color: #fff3cd;
         }
 
-        /* Hyperlink Styling */
         .org-link {
             color: #0056b3;
             text-decoration: none;
@@ -123,6 +120,12 @@
         .unknown {
             color: #999;
             font-style: italic;
+        }
+        .error-message {
+            color: #cc0000;
+            font-weight: bold;
+            text-align: center;
+            padding: 20px;
         }
     </style>
 </head>
@@ -202,4 +205,142 @@
         { org: "City of Ames - Youth Basketball", url: "https://www.cityofames.org/My-Government/Departments/Parks-and-Recreation/Youth-Programs", sport: "Basketball", ages: "Grades K - 6th", season: "Winter", class: "Rec", type: "Municipal", profit: "Non-Profit", scholarships: "Unknown" },
         { org: "City of Ames - Youth Soccer", url: "https://www.cityofames.org/My-Government/Departments/Parks-and-Recreation/Youth-Programs", sport: "Soccer", ages: "Ages 5 - 6th Grade", season: "Fall / Spring", class: "Rec", type: "Municipal", profit: "Non-Profit", scholarships: "Unknown" },
         { org: "City of Ames - Diamond Sports (Blastball/Tee-Ball)", url: "https://www.cityofames.org/My-Government/Departments/Parks-and-Recreation/Youth-Programs", sport: "Baseball / Softball", ages: "Ages 4 - 8", season: "Summer", class: "Rec", type: "Municipal", profit: "Non-Profit", scholarships: "Unknown" },
-        { org: "City of Ames - Miracle League", url: "https://www.cityofames.org/My-Government/Departments/Parks-and-Recreation/Youth-Programs", sport: "Multi-Sport", ages: "Ages 5+ (Special Needs)", season: "Summer", class
+        { org: "City of Ames - Miracle League", url: "https://www.cityofames.org/My-Government/Departments/Parks-and-Recreation/Youth-Programs", sport: "Multi-Sport", ages: "Ages 5+ (Special Needs)", season: "Summer", class: "Rec", type: "Municipal", profit: "Non-Profit", scholarships: "Unknown" },
+        { org: "City of Ames - Youth Tennis", url: "https://www.cityofames.org/My-Government/Departments/Parks-and-Recreation/Youth-Programs", sport: "Tennis", ages: "Ages 3 - 16", season: "Summer / Year-Round", class: "Rec", type: "Municipal", profit: "Non-Profit", scholarships: "Unknown" },
+        { org: "City of Ames - Youth Golf", url: "https://www.cityofames.org/My-Government/Departments/Parks-and-Recreation/Youth-Programs", sport: "Golf", ages: "Ages 6 - 14", season: "Summer / Winter", class: "Rec", type: "Municipal", profit: "Non-Profit", scholarships: "Unknown" },
+        { org: "City of Ames - Gymnastics", url: "https://www.cityofames.org/My-Government/Departments/Parks-and-Recreation/Youth-Programs", sport: "Gymnastics", ages: "Ages 2+", season: "Year-Round", class: "Rec", type: "Municipal", profit: "Non-Profit", scholarships: "Unknown" },
+        { org: "City of Ames - Youth Dance", url: "https://www.cityofames.org/My-Government/Departments/Parks-and-Recreation/Youth-Programs", sport: "Dance", ages: "Ages 2+", season: "Year-Round", class: "Rec", type: "Municipal", profit: "Non-Profit", scholarships: "Unknown" },
+        { org: "City of Ames - Youth Volleyball", url: "https://www.cityofames.org/My-Government/Departments/Parks-and-Recreation/Youth-Programs", sport: "Volleyball", ages: "Youth", season: "Spring / Summer / Fall", class: "Rec", type: "Municipal", profit: "Non-Profit", scholarships: "Unknown" },
+        { org: "Ames Soccer Club", url: "https://amessoccer.org", sport: "Soccer", ages: "5U - 19U", season: "Fall & Spring", class: "Rec & Travel", type: "Non-Municipal", profit: "Non-Profit", scholarships: "Unknown" },
+        { org: "Upward Sports @ The PLEX", url: "https://theplex.org/youth-sports", sport: "Multi-Sport", ages: "K - 6th Grade", season: "Fall / Winter", class: "Rec", type: "Non-Municipal", profit: "Unknown", scholarships: "Unknown" },
+        { org: "Ames Basketball Club", url: "https://www.ameshighhoops.com/aclub", sport: "Basketball", ages: "Youth", season: "Winter", class: "Club / Travel", type: "Non-Municipal", profit: "Unknown", scholarships: "Unknown" },
+        { org: "Ames Youth Football", url: "#", sport: "Football", ages: "Youth", season: "Fall", class: "Flag & Tackle", type: "Non-Municipal", profit: "Unknown", scholarships: "Unknown" },
+        { org: "Ames Minor Hockey Association", url: "https://ameshockey.com", sport: "Ice Sports", ages: "8U - High School", season: "Winter", class: "Rec & Travel", type: "Non-Municipal", profit: "Non-Profit", scholarships: "Unknown" },
+        { org: "Ames Figure Skating Club", url: "https://amesfsc.org", sport: "Ice Sports", ages: "Ages 3+", season: "Year-Round", class: "Rec", type: "Non-Municipal", profit: "Non-Profit", scholarships: "Unknown" },
+        { org: "ISU Recreation Services", url: "https://cyclonehealth.iastate.edu/recreation/youth", sport: "Aquatics", ages: "Youth", season: "Year-Round", class: "Rec", type: "Municipal", profit: "Non-Profit", scholarships: "N/A" },
+        { org: "Cyclone Swim School", url: "https://cycloneswimschool.com", sport: "Aquatics", ages: "Ages 4+", season: "Year-Round", class: "Rec & Competitive", type: "Non-Municipal", profit: "Unknown", scholarships: "Unknown" },
+        { org: "SUCCESS Gymnastics", url: "https://successgymnastics.net", sport: "Gymnastics", ages: "Toddler+", season: "Year-Round", class: "Rec & Competitive", type: "Non-Municipal", profit: "Unknown", scholarships: "Unknown" },
+        { org: "Iowa Flyers Track", url: "https://iowaflyers.com", sport: "Track", ages: "Ages 7+", season: "Spring", class: "Rec", type: "Non-Municipal", profit: "Unknown", scholarships: "Unknown" },
+        { org: "AAU Ames Volleyball", url: "https://register.ryzer.com/camp.cfm?sport=8&id=317099", sport: "Volleyball", ages: "Youth", season: "Winter / Spring", class: "Club / Travel", type: "Non-Municipal", profit: "Unknown", scholarships: "Unknown" },
+        { org: "Cyclone Youth Wrestling", url: "https://cywrestling.com", sport: "Wrestling", ages: "K - 6th Grade", season: "Winter", class: "Rec", type: "Non-Municipal", profit: "Unknown", scholarships: "Unknown" },
+        { org: "Ames Area Wrestling Club", url: "#", sport: "Wrestling", ages: "Youth", season: "Winter", class: "Rec & Competitive", type: "Non-Municipal", profit: "Unknown", scholarships: "Unknown" },
+        { org: "Ames ATA Black Belt Academy", url: "https://www.amesata.com", sport: "Martial Arts", ages: "Ages 4+", season: "Year-Round", class: "Rec", type: "Non-Municipal", profit: "For-Profit", scholarships: "Unknown" },
+        { org: "Robert Thomas Dancenter", url: "https://rtdance.com", sport: "Dance", ages: "PreK - Adult", season: "Year-Round", class: "Rec & Competitive", type: "Non-Municipal", profit: "For-Profit", scholarships: "Unknown" },
+        { org: "Bold Dance By Peach", url: "http://www.bolddancebypeach.com", sport: "Dance", ages: "Youth", season: "Year-Round", class: "Rec & Competitive", type: "Non-Municipal", profit: "For-Profit", scholarships: "Unknown" },
+        { org: "Performance Dance Centre", url: "http://www.performancedancecentre.com", sport: "Dance", ages: "Youth", season: "Year-Round", class: "Rec & Competitive", type: "Non-Municipal", profit: "For-Profit", scholarships: "Unknown" }
+    ];
+
+    let currentSort = { column: -1, direction: 'asc' };
+
+    function renderTable(data) {
+        const tbody = document.getElementById('tableBody');
+        tbody.innerHTML = '';
+        
+        if (!data || data.length === 0) {
+            tbody.innerHTML = '<tr><td colspan="8" class="error-message">No sports data found to display.</td></tr>';
+            return;
+        }
+
+        data.forEach(item => {
+            const tr = document.createElement('tr');
+            
+            tr.onclick = function(e) {
+                if (e.target.tagName !== 'A') {
+                    this.classList.toggle('selected-row');
+                }
+            };
+            
+            const columns = ['org', 'sport', 'ages', 'season', 'class', 'type', 'profit', 'scholarships'];
+            
+            columns.forEach((key, index) => {
+                const td = document.createElement('td');
+                const val = item[key];
+
+                if (index === 0) {
+                    td.innerHTML = `<a href="${item.url}" target="_blank" class="org-link">${val}</a>`;
+                } else if (val === 'Unknown' || val === 'N/A') {
+                    td.innerHTML = `<span class="unknown">${val}</span>`;
+                } else if (val === 'Municipal') {
+                    td.innerHTML = `<span class="badge" style="background:#d4edda;color:#155724;">${val}</span>`;
+                } else if (val === 'Non-Municipal') {
+                    td.innerHTML = `<span class="badge" style="background:#e2e3e5;color:#383d41;">${val}</span>`;
+                } else {
+                    td.textContent = val;
+                }
+                tr.appendChild(td);
+            });
+            tbody.appendChild(tr);
+        });
+    }
+
+    function applyFilters() {
+        try {
+            const sportFilter = document.getElementById('filterSport').value;
+            const seasonFilter = document.getElementById('filterSeason').value;
+            const typeFilter = document.getElementById('filterType').value;
+
+            const filteredData = sportsData.filter(item => {
+                const matchSport = sportFilter === 'All' || item.sport.includes(sportFilter);
+                const matchSeason = seasonFilter === 'All' || item.season.includes(seasonFilter) || item.season.includes('Varies');
+                const matchType = typeFilter === 'All' || item.type === typeFilter;
+                return matchSport && matchSeason && matchType;
+            });
+
+            currentSort = { column: -1, direction: 'asc' };
+            updateHeaderStyles(-1, 'asc');
+            renderTable(filteredData);
+        } catch (error) {
+            console.error("Filtering error:", error);
+        }
+    }
+
+    function sortTable(columnIndex) {
+        try {
+            const tbody = document.getElementById("tableBody");
+            const rows = Array.from(tbody.querySelectorAll("tr"));
+            
+            const direction = currentSort.column === columnIndex && currentSort.direction === 'asc' ? 'desc' : 'asc';
+            currentSort = { column: columnIndex, direction: direction };
+
+            updateHeaderStyles(columnIndex, direction);
+
+            rows.sort((a, b) => {
+                const cellA = a.children[columnIndex].textContent.trim();
+                const cellB = b.children[columnIndex].textContent.trim();
+                
+                if (cellA < cellB) return direction === 'asc' ? -1 : 1;
+                if (cellA > cellB) return direction === 'asc' ? 1 : -1;
+                return 0;
+            });
+
+            tbody.innerHTML = '';
+            rows.forEach(row => tbody.appendChild(row));
+        } catch (error) {
+            console.error("Sorting error:", error);
+        }
+    }
+
+    function updateHeaderStyles(activeIndex, direction) {
+        const headers = document.querySelectorAll("th");
+        headers.forEach((th, index) => {
+            th.classList.remove("active-sort", "asc", "desc");
+            if (index === activeIndex) {
+                th.classList.add("active-sort");
+                th.classList.add(direction);
+            }
+        });
+    }
+
+    // Wrap initial render in a try-catch to display initialization errors visually
+    window.onload = function() {
+        try {
+            renderTable(sportsData);
+        } catch (error) {
+            document.getElementById('tableBody').innerHTML = `<tr><td colspan="8" class="error-message">JavaScript Error: ${error.message}. Please check the developer console.</td></tr>`;
+            console.error("Initialization error:", error);
+        }
+    };
+</script>
+
+</body>
+</html>
