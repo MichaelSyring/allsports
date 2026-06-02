@@ -201,11 +201,11 @@
 <script>
     const sportsData = [
         { org: "Ames Youth Baseball (AYB) / Ames Storm", url: "https://amesyouthbaseball.org", sport: "Baseball", ages: "PreK - 6th Grade", season: "Spring / Summer", class: "Rec & Travel", type: "Non-Municipal", profit: "Non-Profit", scholarships: "Unknown" },
-        { org: "Ames Girls Softball Association (AGSA) / Ames Thunder", url: "https://amesgirlssoftball.org", sport: "Softball", ages: "PreK - 18U (9U competes in 10U)", season: "Spring / Summer", class: "Rec & Travel", type: "Non-Municipal", profit: "Non-Profit", scholarships: "Unknown" },
-        { org: "City of Ames - Youth Basketball", url: "https://www.cityofames.org/My-Government/Departments/Parks-and-Recreation/Youth-Programs", sport: "Basketball", ages: "Grades K - 6th", season: "Winter", class: "Rec", type: "Municipal", profit: "Non-Profit", scholarships: "Unknown" },
+        { org: "Ames Girls Softball Association (AGSA) / Ames Thunder", url: "https://amesgirlssoftball.org", sport: "Softball", ages: "PreK - 18U", season: "Spring / Summer", class: "Rec & Travel", type: "Non-Municipal", profit: "Non-Profit", scholarships: "Unknown" },
+        { org: "City of Ames - Youth Basketball", url: "https://www.cityofames.org/My-Government/Departments/Parks-and-Recreation/Youth-Programs", sport: "Basketball", ages: "K - 6th Grade", season: "Winter", class: "Rec", type: "Municipal", profit: "Non-Profit", scholarships: "Unknown" },
         { org: "City of Ames - Youth Soccer", url: "https://www.cityofames.org/My-Government/Departments/Parks-and-Recreation/Youth-Programs", sport: "Soccer", ages: "Ages 5 - 6th Grade", season: "Fall / Spring", class: "Rec", type: "Municipal", profit: "Non-Profit", scholarships: "Unknown" },
         { org: "City of Ames - Diamond Sports (Blastball/Tee-Ball)", url: "https://www.cityofames.org/My-Government/Departments/Parks-and-Recreation/Youth-Programs", sport: "Baseball / Softball", ages: "Ages 4 - 8", season: "Summer", class: "Rec", type: "Municipal", profit: "Non-Profit", scholarships: "Unknown" },
-        { org: "City of Ames - Miracle League", url: "https://www.cityofames.org/My-Government/Departments/Parks-and-Recreation/Youth-Programs", sport: "Multi-Sport", ages: "Ages 5+ (Special Needs)", season: "Summer", class: "Rec", type: "Municipal", profit: "Non-Profit", scholarships: "Unknown" },
+        { org: "City of Ames - Miracle League", url: "https://www.cityofames.org/My-Government/Departments/Parks-and-Recreation/Youth-Programs", sport: "Multi-Sport", ages: "Ages 5+", season: "Summer", class: "Rec", type: "Municipal", profit: "Non-Profit", scholarships: "Unknown" },
         { org: "City of Ames - Youth Tennis", url: "https://www.cityofames.org/My-Government/Departments/Parks-and-Recreation/Youth-Programs", sport: "Tennis", ages: "Ages 3 - 16", season: "Summer / Year-Round", class: "Rec", type: "Municipal", profit: "Non-Profit", scholarships: "Unknown" },
         { org: "City of Ames - Youth Golf", url: "https://www.cityofames.org/My-Government/Departments/Parks-and-Recreation/Youth-Programs", sport: "Golf", ages: "Ages 6 - 14", season: "Summer / Winter", class: "Rec", type: "Municipal", profit: "Non-Profit", scholarships: "Unknown" },
         { org: "City of Ames - Gymnastics", url: "https://www.cityofames.org/My-Government/Departments/Parks-and-Recreation/Youth-Programs", sport: "Gymnastics", ages: "Ages 2+", season: "Year-Round", class: "Rec", type: "Municipal", profit: "Non-Profit", scholarships: "Unknown" },
@@ -219,7 +219,7 @@
         { org: "Ames Figure Skating Club", url: "https://amesfsc.org", sport: "Ice Sports", ages: "Ages 3+", season: "Year-Round", class: "Rec", type: "Non-Municipal", profit: "Non-Profit", scholarships: "Unknown" },
         { org: "ISU Recreation Services", url: "https://cyclonehealth.iastate.edu/recreation/youth", sport: "Aquatics", ages: "Youth", season: "Year-Round", class: "Rec", type: "Municipal", profit: "Non-Profit", scholarships: "N/A" },
         { org: "Cyclone Swim School", url: "https://cycloneswimschool.com", sport: "Aquatics", ages: "Ages 4+", season: "Year-Round", class: "Rec & Competitive", type: "Non-Municipal", profit: "Unknown", scholarships: "Unknown" },
-        { org: "SUCCESS Gymnastics", url: "https://successgymnastics.net", sport: "Gymnastics", ages: "Toddler+", season: "Year-Round", class: "Rec & Competitive", type: "Non-Municipal", profit: "Unknown", scholarships: "Unknown" },
+        { org: "SUCCESS Gymnastics", url: "https://successgymnastics.net", sport: "Gymnastics", ages: "Ages 2+", season: "Year-Round", class: "Rec & Competitive", type: "Non-Municipal", profit: "Unknown", scholarships: "Unknown" },
         { org: "Iowa Flyers Track", url: "https://iowaflyers.com", sport: "Track", ages: "Ages 7+", season: "Spring", class: "Rec", type: "Non-Municipal", profit: "Unknown", scholarships: "Unknown" },
         { org: "AAU Ames Volleyball", url: "https://register.ryzer.com/camp.cfm?sport=8&id=317099", sport: "Volleyball", ages: "Youth", season: "Winter / Spring", class: "Club / Travel", type: "Non-Municipal", profit: "Unknown", scholarships: "Unknown" },
         { org: "Cyclone Youth Wrestling", url: "https://cywrestling.com", sport: "Wrestling", ages: "K - 6th Grade", season: "Winter", class: "Rec", type: "Non-Municipal", profit: "Unknown", scholarships: "Unknown" },
@@ -331,7 +331,6 @@
         });
     }
 
-    // Wrap initial render in a try-catch to display initialization errors visually
     window.onload = function() {
         try {
             renderTable(sportsData);
